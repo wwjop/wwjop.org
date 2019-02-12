@@ -10,7 +10,7 @@
     display: flex;
     align-self: flex-end;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
 }
 
 #central .header {
@@ -31,7 +31,7 @@
 @media only screen and (max-width: 770px) {
     #central {
         align-self: center;
-        padding-left: 10%;
+        justify-self: center;
     }
 
     #paper {
