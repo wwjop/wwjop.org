@@ -1,0 +1,12 @@
+#central-box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#central {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 75%;
+}

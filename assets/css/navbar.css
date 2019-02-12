@@ -1,0 +1,16 @@
+.navbar {
+    border-bottom: 0.7px solid black;
+}
+
+.navbar-brand {
+    margin-left: 10%;
+    padding: 0.7%;
+}
+
+.navbar-brand span {
+    font-size: 1.1em;
+}
+
+a.navbar-item:hover {
+    background-color: transparent;
+}
