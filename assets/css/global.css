@@ -1,9 +1,16 @@
 * {
     font-family: "Source Sans Pro", Arial;
+    color: black;
 }
 
 .header {
     font-family: Merriweather, Arial;
     font-weight: bolder;
     color: black;
+}
+
+.crossbar {
+    height: 1px;
+    background-color: black;
+    width: 100%;
 }
