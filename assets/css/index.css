@@ -32,6 +32,7 @@
     #central {
         align-self: center;
         justify-self: center;
+        width: 95%;
     }
 
     #paper {
