@@ -9,6 +9,7 @@
 
 .navbar-brand span {
     font-size: 1.1em;
+    width: 100%;
 }
 
 a.navbar-item:hover {
