@@ -22,3 +22,8 @@
 i {
     margin: 5px;
 }
+
+html,
+body {
+    height: 100%;
+}
