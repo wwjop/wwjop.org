@@ -8,14 +8,14 @@ layout: default
     <span id="logo">The Whitman Journal of Psychology</span>
     <nav class="navbar is-transparent" role="navigation">
         <div id="navbar" class="navbar-menu">
-            <a class="navbar-item">Home</a>
-            <a class="navbar-item">Submit</a>
+            <a class="navbar-item" href="/">Home</a>
+            <a class="navbar-item" href="/submit">Submit</a>
             <a class="navbar-item">Subscribe</a>
-            <a class="navbar-item">About</a>
+            <a class="navbar-item">Team</a>
         </div>
     </nav>
     <div id="issue-box">
-        <a id="issue" href="journal">
+        <a id="issue" href="assets/journals/final_october_2018_journal.pdf">
             <img src="assets/images/october-2018-cover.jpg" alt="October 2018 Issue">
             <div id="ribbon">
                 <span>Click Me to Read!</span>
@@ -24,6 +24,13 @@ layout: default
     </div>
 </div>
 <div id="page">
+    <h1 class="header header-pad-bottom">About Us</h1>
+    <p>The Whitman Journal of Psychology is a non-profit, student-run publication. We collect submissions from high
+        school students around the country and publish the most intriguing and well written submissions that we
+        receive. We consider every submission and are always looking for new articles, so we encourage students to
+        submit their work.</p>
+
+    <h1 class="header header-pad-bottom">Posts</h1>
     <div class="tile is-ancestor">
         {% for post in site.posts %}
             {% if forloop.first == true %}

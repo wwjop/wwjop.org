@@ -1,0 +1,11 @@
+thead tr > th {
+    width: 50%;
+}
+
+.button {
+    align-self: center;
+}
+
+ul {
+    list-style: circle;
+}

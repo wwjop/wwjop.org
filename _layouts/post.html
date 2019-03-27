@@ -1,0 +1,15 @@
+---
+layout: nothome
+---
+
+<link rel="stylesheet" href="/assets/css/post.css" />
+
+<div id="post-box">
+    <div id="post-head">
+        <h1 class="header">{{ page.title }}</h1>
+        {% if page.author != nil %}
+            <span>By {{ page.author }}</span>
+        {% endif %}
+    </div>
+    {{ content }}s
+</div>
