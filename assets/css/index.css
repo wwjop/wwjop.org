@@ -15,6 +15,7 @@
 
 #issue-box {
     height: 25vh;
+    max-height: 90vh;
 }
 
 #issue {
