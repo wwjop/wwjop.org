@@ -49,7 +49,7 @@ footer {
 }
 
 #logo {
-    padding: 1%;
+    padding: 1vh;
     font-family: Merriweather, Arial;
     color: #fff;
     font-size: 2em;
@@ -65,8 +65,8 @@ footer {
 
 .navbar {
     background-color: transparent;
-    padding-top: 1%;
-    padding-bottom: 2.5%;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
 }
 
 .navbar a {
