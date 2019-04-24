@@ -94,3 +94,11 @@ footer {
     padding: 5% 10%;
     font-family: "Source Sans Pro";
 }
+
+.footer {
+    padding: 1rem;
+}
+
+.footer p {
+    margin-bottom: 0 !important;
+}
