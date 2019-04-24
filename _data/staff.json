@@ -1,0 +1,125 @@
+{
+    "teams": [
+        {
+            "name": "Leadership",
+            "people": [
+                {
+                    "name": "Marisa Del Savio",
+                    "role": "Program Manager",
+                    "year": "Teacher"
+                },
+                {
+                    "name": "Thomas Mande",
+                    "role": "Editor in Chief",
+                    "year": "Senior"
+                }
+            ]
+        },
+        {
+            "name": "Communications",
+            "people": [
+                {
+                    "name": "Lauren Oppenheim",
+                    "role": "Team Lead",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Samantha Goldberg",
+                    "role": "Communicator",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Khanya Dalton",
+                    "role": "Communicator",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Jordan Shaibani",
+                    "role": "Communicator",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Tori Sullivan",
+                    "role": "Communicator",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Drew Haas",
+                    "role": "Communicator",
+                    "year": "Junior"
+                }
+            ]
+        },
+        {
+            "name": "Technology",
+            "people": [
+                {
+                    "name": "Wesley Smith",
+                    "role": "Web Designer",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Ariana Faghani",
+                    "role": "Photographer",
+                    "year": "Senior"
+                }
+            ]
+        },
+        {
+            "name": "Editing",
+            "people": [
+                {
+                    "name": "Ivy Xun",
+                    "role": "Team Lead",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Ian Poe",
+                    "role": "Editor",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Sarah Liu",
+                    "role": "Editor",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Qiuyu Apel",
+                    "role": "Editor",
+                    "year": "Junior"
+                }
+            ]
+        },
+        {
+            "name": "Research",
+            "people": [
+                {
+                    "name": "Mariana Fajnzylber",
+                    "role": "Team Lead",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Kyle Crichton",
+                    "role": "Researcher",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Becca Marr",
+                    "role": "Researcher",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Mason Levin",
+                    "role": "Researcher",
+                    "year": "Junior"
+                }
+                ,
+                {
+                    "name": "Louis Moon",
+                    "role": "Researcher",
+                    "year": "Junior"
+                }
+            ]
+        }
+    ]
+}

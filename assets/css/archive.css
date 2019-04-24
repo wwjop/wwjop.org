@@ -1,0 +1,13 @@
+#journals {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.journal {
+    margin: 10px;
+}
+
+.journal img {
+    width: 200px;
+    object-fit: cover;
+}

@@ -1,0 +1,24 @@
+figure img {
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.card {
+    width: 300px;
+    margin: 15px;
+    flex-shrink: 0;
+}
+
+.team-name {
+    font-size: 1.7em;
+    padding-top: 1.5rem;
+}
+
+.people {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bold {
+    font-weight: bold;
+}
