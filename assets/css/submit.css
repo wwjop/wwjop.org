@@ -9,3 +9,8 @@ thead tr > th {
 ul {
     list-style: circle;
 }
+
+#date {
+    text-align: center;
+    font-weight: bold;
+}
