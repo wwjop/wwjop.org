@@ -9,7 +9,7 @@
                     "year": "Teacher"
                 },
                 {
-                    "name": "Thomas Mande",
+                    "name": "Becca Marr",
                     "role": "Editor in Chief",
                     "year": "Senior"
                 }
@@ -19,34 +19,19 @@
             "name": "Communications",
             "people": [
                 {
-                    "name": "Lauren Oppenheim",
-                    "role": "Team Lead",
-                    "year": "Senior"
-                },
-                {
-                    "name": "Samantha Goldberg",
-                    "role": "Communicator",
-                    "year": "Senior"
-                },
-                {
-                    "name": "Khanya Dalton",
-                    "role": "Communicator",
-                    "year": "Junior"
-                },
-                {
                     "name": "Jordan Shaibani",
-                    "role": "Communicator",
-                    "year": "Junior"
+                    "role": "Team Lead ",
+                    "year": "Senior"
                 },
                 {
                     "name": "Tori Sullivan",
                     "role": "Communicator",
-                    "year": "Junior"
+                    "year": "Senior"
                 },
                 {
                     "name": "Drew Haas",
                     "role": "Communicator",
-                    "year": "Junior"
+                    "year": "Senior"
                 }
             ]
         },
@@ -55,12 +40,7 @@
             "people": [
                 {
                     "name": "Wesley Smith",
-                    "role": "Web Designer",
-                    "year": "Junior"
-                },
-                {
-                    "name": "Ariana Faghani",
-                    "role": "Photographer",
+                    "role": "Technical Director",
                     "year": "Senior"
                 }
             ]
@@ -69,24 +49,19 @@
             "name": "Editing",
             "people": [
                 {
-                    "name": "Ivy Xun",
-                    "role": "Team Lead",
-                    "year": "Senior"
-                },
-                {
                     "name": "Ian Poe",
                     "role": "Editor",
-                    "year": "Junior"
+                    "year": "Senior"
                 },
                 {
                     "name": "Sarah Liu",
                     "role": "Editor",
-                    "year": "Junior"
+                    "year": "Senior"
                 },
                 {
                     "name": "Qiuyu Apel",
                     "role": "Editor",
-                    "year": "Junior"
+                    "year": "Senior"
                 }
             ]
         },
@@ -94,24 +69,14 @@
             "name": "Research",
             "people": [
                 {
-                    "name": "Mariana Fajnzylber",
-                    "role": "Team Lead",
-                    "year": "Senior"
-                },
-                {
                     "name": "Kyle Crichton",
                     "role": "Researcher",
-                    "year": "Junior"
-                },
-                {
-                    "name": "Becca Marr",
-                    "role": "Researcher",
-                    "year": "Junior"
+                    "year": "Senior"
                 },
                 {
                     "name": "Louis Moon",
                     "role": "Researcher",
-                    "year": "Junior"
+                    "year": "Senior"
                 }
             ]
         }
