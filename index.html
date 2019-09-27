@@ -30,25 +30,4 @@ layout: default
         school students around the country and publish the most intriguing and well written submissions that we
         receive. We consider every submission and are always looking for new articles, so we encourage students to
         submit their work.</p>
-
-    <h1 class="header header-pad-bottom">Posts</h1>
-    <div class="tile is-ancestor">
-        {% for post in site.posts %}
-            {% if forloop.first == true %}
-                <div class="tile is-parent is-8">
-                    <div class="tile is-child box">
-                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                        <p>{{ post.excerpt }}</p>
-                    </div>
-                </div>
-            {% else %}
-                <div class="tile is-parent is-4">
-                    <div class="tile is-child box">
-                        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
-                        <p>{{ post.excerpt }}</p>
-                    </div>
-                </div>
-            {% endif %}
-        {% endfor %}
-    </div>
 </div>
