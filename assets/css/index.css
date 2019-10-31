@@ -1,5 +1,6 @@
 #welcome {
     height: 85vh;
+    max-height: 900px;
 }
 
 #page {
