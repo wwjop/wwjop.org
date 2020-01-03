@@ -1,0 +1,102 @@
+.featured-articles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+}
+
+.fade-left {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background: -webkit-linear-gradient(to left,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    ); 
+    background-image: -moz-linear-gradient(to left,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: -o-linear-gradient(to left,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: linear-gradient(to left,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: -ms-linear-gradient(to left,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+}
+.fade-right {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    margin-left: 65%;
+    background: -webkit-linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    ); 
+    background-image: -moz-linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: -o-linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+    background-image: -ms-linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        #19191b 100%
+    );
+}
+
+.featured-articles, .chevron-down {
+    padding-bottom: 3vh;
+}
+
+.featured-article {
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 0 220px;
+}
+
+.featured-article, 
+.title-by-box {
+    padding: 20px;
+}
+
+.title-by-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+} 
+
+.featured-article img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 100% 0;
+    border-radius: 2px;
+}
+
+.chevron-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.chevron-down * {
+    color: rgba(255,255,255,.6) !important;
+}
