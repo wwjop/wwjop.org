@@ -91,7 +91,7 @@ footer {
     background-color: transparent;
 }
 
-#page {
+.page {
     padding: 5% 10%;
     font-family: "Source Sans Pro";
 }
@@ -102,4 +102,18 @@ footer {
 
 .footer p {
     margin-bottom: 0 !important;
+}
+
+.header {
+    font-size: 2.2em;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#box {
+    width: 80%;
 }
