@@ -6,7 +6,7 @@ layout: nothome
 
 <h1 class="header header-pad-bottom">Our Team</h1>
 {% for team in site.data.staff.teams %}
-{% if team.people.length > 0 %}
+{% if team.length > 0 %}
 <h1 class="header team-name header-pad-bottom">{{ team.name }}</h1>
 <div class="people">
     {% for person in team.people %}
