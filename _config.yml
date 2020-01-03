@@ -2,7 +2,6 @@ title: The Whitman Journal of Psychology
 url: whitmanpsychjournal.org
 excerpt_separator: <!-- end excerpt -->
 source: src
-destination: src/_site
 exclude:
   - README.md
   - .gitignore
