@@ -31,7 +31,6 @@ i {
 html,
 body {
     height: 100%;
-    min-width: 700px;
     max-height: 1500px;
 }
 
