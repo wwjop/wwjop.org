@@ -2,6 +2,7 @@
 ---
 
 <h1 class="header header-pad-bottom">Our Team</h1>
+<span>{{ site.data.staff.teams }}</span>
 {% for team in site.data.staff.teams %}
 {% if team.people.length > 0 %}
 <h1 class="header team-name header-pad-bottom">{{ team.name }}</h1>
