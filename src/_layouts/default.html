@@ -8,12 +8,24 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" />
         <link rel="stylesheet" href="//afeld.github.io/emoji-css/emoji.css" />
-        <link rel="stylesheet" href="/assets/css/fonts.css" />
-        <link rel="stylesheet" href="/assets/css/global.css" />
+        <link rel="stylesheet" href="assets/css/fonts.css" />
+        <link rel="stylesheet" href="assets/css/global.css" />
 
         <script defer src="//use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     </head>
     <body>
+        <div id="nav-area">
+            <span id="logo">The Whitman Journal of Psychology</span>
+            <nav class="navbar is-transparent" role="navigation">
+                <div id="navbar" class="navbar-menu">
+                    <a class="navbar-item" href="/">Home</a>
+                    <a class="navbar-item" href="/submit">Submit</a>
+                    <a class="navbar-item" href="/subscribe">Subscribe</a>
+                    <a class="navbar-item" href="/team">Team</a>
+                    <a class="navbar-item" href="/archive">Archive</a>
+                </div>
+            </nav>
+        </div>
         {{ content }}
     </body>
     <footer class="footer">
