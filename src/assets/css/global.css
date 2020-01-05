@@ -28,14 +28,12 @@ i {
     margin: 5px;
 }
 
-html,
-body {
-    height: 100%;
-    max-height: 1500px;
-}
-
-footer {
+.footer {
     font-size: 1.1em;
+    background-color: #19191b;
+}
+.footer p {
+    color: rgba(255,255,255,.6);
 }
 
 #nav-area {

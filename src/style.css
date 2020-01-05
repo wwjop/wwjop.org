@@ -66,13 +66,22 @@
     height: 500px;
     width: 700px;
     background-color: white;
-    border-radius: 2px;
     margin: 0 220px;
+}
+
+.featured-article,
+.featured-article img,
+.resource {
+    border-radius: 2px;
 }
 
 .featured-article, 
 .title-by-box {
     padding: 20px;
+}
+
+.focused {
+    margin: 0;
 }
 
 .title-by-box {
@@ -87,7 +96,6 @@
     width: 200px;
     object-fit: cover;
     object-position: 100% 0;
-    border-radius: 2px;
 }
 
 .chevron-down {
@@ -99,4 +107,32 @@
 
 .chevron-down * {
     color: rgba(255,255,255,.6) !important;
+}
+
+.left-arrow, .right-arrow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.left-arrow i, .right-arrow i {
+    margin: 0 40px;
+    color: rgba(255,255,255,.6) !important;
+    font-size: 2em;
+}
+
+.left-arrow i:hover, .right-arrow i:hover {
+    color: rgba(255,255,255,.8) !important;
+    cursor: pointer;
+}
+
+#psych-unit i {
+    color: inherit;
+    font-size: 0.7em;
+    margin-left: -0.2px;
+}
+
+.nav-area {
+    max-height: 100%;
 }

@@ -4,7 +4,7 @@ layout: default
 
 <div id="nav-area">
     {% include navbar.html %}
-    <div class="featured-articles">
+    <div class="featured-articles is-hidden-mobile">
         <div class="fade-left"></div>
         <div class="fade-right"></div>
         <div class="featured-article">
@@ -28,7 +28,10 @@ layout: default
                 love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love it?
                 Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
         </div>
-        <div class="featured-article">
+        <div class="left-arrow">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="featured-article focused">
             <div class="photo-title">
                 <div class="columns is-gapless">
                     <div class="column is-narrow">
@@ -48,6 +51,9 @@ layout: default
                 Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you
                 love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love it?
                 Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
+        </div>
+        <div class="right-arrow">
+            <i class="fas fa-chevron-right"></i>
         </div>
         <div class="featured-article">
             <div class="photo-title">
@@ -71,11 +77,70 @@ layout: default
                 Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
         </div>
     </div>
-    <div class="chevron-down">
+    <div class="chevron-down is-hidden-mobile">
         <p>View More</p>
         <i class="fas fa-angle-double-down"></i>
     </div>
 </div>
 <div class="page">
-    <h1>hello in page</h1>
+    <nav class="level">
+        <div class="level-left">
+            <p class="level-item"><strong>All</strong></p>
+            <p class="level-item"><a>Studies</a></p>
+            <p class="level-item"><a>Podcasts</a></p>
+            <p class="level-item"><a>Videos</a></p>
+            <div class="level-item" id="psych-unit">
+                <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                        <a>
+                            AP Psych Unit
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                            <a class="dropdown-item">Memory</a>
+                            <a class="dropdown-item">Brain Parts</a>
+                            <a class="dropdown-item">Freud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item">
+                <p class="subtitle is-5">
+                    <strong>123</strong> results
+                </p>
+            </div>
+            <div class="level-item">
+                <div class="field has-addons">
+                    <p class="control">
+                        <input class="input" type="text" placeholder="Find a resource">
+                    </p>
+                    <p class="control">
+                        <button class="button">
+                            Search
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="card resource">
+        <div class="card-content">
+            <div class="content">
+                <a href="#" class="title is-4">The Effects of Walnuts on the Brain is Too Much</a>
+                <span class="subtitle">by Wesley Smith</span>
+                <p>
+                    This is the abstract excerpt of my article. Don't you love it? Don't you love it? Don't you love it?
+                    Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't
+                    you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you
+                    love it? Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love
+                    it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love it?
+                    Don't you love it?
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
