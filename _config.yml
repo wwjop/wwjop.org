@@ -9,9 +9,18 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+plugins:
+  - jekyll-minifier
 defaults:
   -
     scope:
       path: ""
     values:
       layout: "short-navbar"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title:output_ext

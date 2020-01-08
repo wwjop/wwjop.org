@@ -1,0 +1,10 @@
+<div class="card resource">
+    <div class="card-content">
+        <div class="content">
+            <a href="{{ post.url }}" class="title is-4">{{ post.title }}</a>
+            <span class="subtitle">by
+                {{ post.authors | join: ", " }}</span>
+            <p>{{ post.excerpt }}</p>
+        </div>
+    </div>
+</div>
