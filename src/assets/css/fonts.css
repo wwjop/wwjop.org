@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Metropolis Medium";
+    src: url("/assets/fonts/Metropolis-Medium.otf");
+}
+
+@font-face {
+    font-family: "Blacker Display";
+    src: url("/assets/fonts/Blacker-Display-ExtraBold-trial.ttf")
+}
