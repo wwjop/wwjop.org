@@ -137,6 +137,9 @@ title: "Home"
             </div>
         </div>
     </nav>
+    {% for post in site.posts %}
+    {% include home-resource-card.html %}
+    {% endfor %}
     {% for category in site.categories %}
     {% assign name=category[0] %}
     <div class="category is-hidden" name="{{ name }}">

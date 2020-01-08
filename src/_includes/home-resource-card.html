@@ -4,7 +4,10 @@
             <a href="{{ post.url }}" class="title is-4">{{ post.title }}</a>
             <span class="subtitle">by
                 {{ post.authors | join: ", " }}</span>
-            <p>{{ post.excerpt }}</p>
+            <p>
+                {{ post.excerpt | strip_html | strip_newlines | truncatewords: 75 }}
+                <span><a href="{{ post.url }}">Read More</a></span>
+            </p>
         </div>
     </div>
 </div>
