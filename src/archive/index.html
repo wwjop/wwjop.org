@@ -1,13 +1,14 @@
 ---
+title: "Archive"
 ---
 
 <h1 class="header header-pad-bottom">Archive</h1>
 <div id="journals">
     {% for image in site.static_files reversed %}
-    {% if image.path contains 'images/archive' %}
-    <a href="/assets/journals/{{ image.basename }}.pdf" class="journal">
-        <img src="{{ image.path }}" alt="image">
-    </a>
-    {% endif %}
+        {% if image.path contains 'images/archive' %}
+            <a class="journal" href="/assets/journals/{{ image.basename }}.pdf">
+                <img src="{{ image.path }}" alt="image">
+            </a>
+        {% endif %}
     {% endfor %}
 </div>
