@@ -4,30 +4,31 @@ title: "Team"
 
 <h1 class="header header-pad-bottom">Our Team</h1>
 {% for team in site.data.staff.teams %}
-    <h1 class="header team-name header-pad-bottom">{{ team.name }}</h1>
-    <div class="people">
-        {% for person in team.people %}
-            <div class="card">
-                <div class="card-image">
-                    <figure class="image is-4by3">
-                        <img src="/assets/images/people/{{ person.name | downcase | replace: ' ', '-' }}.jpg" alt="{{ person.name }}">
-                    </figure>
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <span class="title is-4">{{ person.name }}</span>
-                        <br/>
-                        <span class="is-6">
-                            <span class="bold">Year:</span>
-                            {{ person.year }}</span>
-                        <br/>
-                        <span class="is-6">
-                            <span class="bold">Role:</span>
-                            {{ person.role }}</span>
-                    </div>
-                </div>
+<h1 class="header team-name header-pad-bottom">{{ team.name }}</h1>
+<div class="people">
+    {% for person in team.people %}
+    <div class="card">
+        <div class="card-image">
+            <figure class="image is-4by3">
+                <img src="/assets/images/people/{{ person.name | downcase | replace: ' ', '-' }}.jpg"
+                    alt="{{ person.name }}">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="content">
+                <span class="title is-4">{{ person.name }}</span>
+                <br />
+                <span class="is-6">
+                    <span class="bold">Year:</span>
+                    {{ person.year }}</span>
+                <br />
+                <span class="is-6">
+                    <span class="bold">Role:</span>
+                    {{ person.role }}</span>
             </div>
-        {% endfor %}
-        <br/>
+        </div>
     </div>
+    {% endfor %}
+    <br />
+</div>
 {% endfor %}
