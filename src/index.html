@@ -87,15 +87,15 @@ title: "Home"
     <nav class="level">
         <div class="level-left">
             <p class="level-item">
-                <strong>All</strong>
+                <a id="sort-all" class="selected">All</a>
             </p>
-            <p class="level-item">
+            <p id="sort-studies" class="level-item">
                 <a>Studies</a>
             </p>
-            <p class="level-item">
+            <p id="sort-podcasts" class="level-item">
                 <a>Podcasts</a>
             </p>
-            <p class="level-item">
+            <p id="sort-videos" class="level-item">
                 <a>Videos</a>
             </p>
             <div class="level-item" id="psych-unit">
@@ -137,9 +137,11 @@ title: "Home"
             </div>
         </div>
     </nav>
-    {% for post in site.posts %}
-    {% include home-resource-card.html %}
-    {% endfor %}
+    <div class="category" name="all">
+        {% for post in site.posts %}
+        {% include home-resource-card.html %}
+        {% endfor %}
+    </div>
     {% for category in site.categories %}
     {% assign name=category[0] %}
     <div class="category is-hidden" name="{{ name }}">
