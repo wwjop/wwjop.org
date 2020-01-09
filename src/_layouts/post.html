@@ -1,16 +1,20 @@
 ---
 layout: short-navbar
 ---
+<link rel="stylesheet" href="/assets/css/post.css" />
 
-<link href="/assets/css/post.css" rel="stylesheet"/>
-
-<div id="post-box">
-    <div id="post-head">
-        <h1 class="header">{{ page.title }}</h1>
-        {% if page.author != nil %}
-            <span>By
-                {{ page.author }}</span>
+<div class="is-clearfix">
+    <img src="/assets/posts/{{ page.title | downcase | replace: ' ', '-' }}/authors" class="is-pulled-left"
+        id="article-main-image">
+    <div class="title-area">
+        <p class="title is-1 is-marginless is-1">{{ page.title }}</p>
+        <p class="subtitle is-marginless is-4">Written at {{ page.school}}</p>
+        <p class="subtitle is-marginless is-4">By {{ page.authors | join: ", " }}</p>
+        {% if page.advisors != nil %}
+        <p class="subtitle is-marginless is-4">Advised by {{ page.advisors | join: ", " }}</p>
         {% endif %}
     </div>
-    {{ content }}s
+    <div class="is-size-5 post-area">
+        {{ content }}
+    </div>
 </div>

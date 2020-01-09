@@ -1,20 +1,15 @@
-.header {
-    font-size: 2.2em !important;
-    padding-bottom: 0 !important;
+#article-main-image {
+    max-width: 15em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
 }
 
-#post-head {
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-#page p {
+.post-area p,
+.title-area {
     padding-bottom: 1em;
 }
 
-#post-box h1 {
-    text-align: center;
-    padding-bottom: 1em;
+.post-area h1 {
     font-weight: bold;
     font-size: 1.1em;
 }
