@@ -86,22 +86,22 @@ title: "Home"
 <div class="page">
     <nav class="level">
         <div class="level-left">
-            <p class="level-item">
-                <a id="sort-all" class="selected">All</a>
+            <p id="sort-all" class="level-item is-active">
+                <a class="sort-name">All</a>
             </p>
-            <p id="sort-studies" class="level-item">
-                <a>Studies</a>
+            <p id="sort-study" class="level-item">
+                <a class="sort-name">Studies</a>
             </p>
-            <p id="sort-podcasts" class="level-item">
-                <a>Podcasts</a>
+            <p id="sort-podcast" class="level-item">
+                <a class="sort-name">Podcasts</a>
             </p>
-            <p id="sort-videos" class="level-item">
-                <a>Videos</a>
+            <p id="sort-video" class="level-item">
+                <a class="sort-name">Videos</a>
             </p>
-            <div class="level-item" id="psych-unit">
+            <div id="sort-psych-unit" class="level-item">
                 <div class="dropdown is-hoverable">
                     <div class="dropdown-trigger">
-                        <a>
+                        <a class="sort-name">
                             AP Psych Unit
                             <i aria-hidden="true" class="fas fa-angle-down"></i>
                         </a>
@@ -109,7 +109,7 @@ title: "Home"
                     <div class="dropdown-menu" role="menu">
                         <div class="dropdown-content">
                             {% for tag in site.tags %}
-                            <a class="dropdown-item is-capitalized">{{ tag[0] }}</a>
+                            <a class="dropdown-item is-capitalized tag-selector">{{ tag[0] }}</a>
                             {% endfor %}
                         </div>
                     </div>
@@ -119,7 +119,7 @@ title: "Home"
         <div class="level-right">
             <div class="level-item">
                 <p class="subtitle is-5">
-                    <strong>123</strong>
+                    <strong id="results-number">123</strong>
                     results
                 </p>
             </div>
@@ -142,6 +142,7 @@ title: "Home"
         {% include home-resource-card.html %}
         {% endfor %}
     </div>
+
     {% for category in site.categories %}
     {% assign name=category[0] %}
     <div class="category is-hidden" name="{{ name }}">
@@ -150,6 +151,7 @@ title: "Home"
         {% endfor %}
     </div>
     {% endfor %}
+
     {% for tag in site.tags %}
     {% assign name=tag[0] %}
     <div class="psych-unit is-hidden" name="{{ name }}">
@@ -158,4 +160,9 @@ title: "Home"
         {% endfor %}
     </div>
     {% endfor %}
+
+    <div class="category is-hidden has-text-centered" name="none-found">
+        <h1 class="title is-5">No search results</h1>
+        <h1 class="subtitle is-6">Your search didn't match any resources. Try searching for something else.</h1>
+    </div>
 </div>

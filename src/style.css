@@ -131,7 +131,7 @@
     cursor: pointer;
 }
 
-#psych-unit i {
+#sort-psych-unit i {
     color: inherit;
     font-size: 0.7em;
     margin-left: -0.2px;
@@ -139,4 +139,13 @@
 
 .nav-area {
     max-height: 100%;
+}
+
+.is-active a.sort-name {
+    color: #363636;
+    font-weight: bold;
+}
+.is-active a.sort-name:hover {
+    cursor: default;
+    text-decoration: none;
 }
