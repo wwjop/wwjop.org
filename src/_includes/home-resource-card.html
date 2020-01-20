@@ -1,4 +1,11 @@
-<div class="card resource">
+{% assign titleWords = post.title | downcase | split: " " %}
+{% assign lowercaseAuthors = post.authors | join: " " | downcase | split: " " %}
+{% assign keywords = titleWords | concat: lowercaseAuthors | concat: post.tags %}
+{% assign search = keywords | join: "|" | append: post.category %}
+{% assign firstBar = "|" | append: search %}
+{% assign lastBar = firstBar | append: "|" %}
+
+<div class="card resource" search="{{ lastBar }}">
     <div class="card-content">
         <div class="content">
             <a href="{{ post.url }}" class="title is-4">{{ post.title }}</a>

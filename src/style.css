@@ -146,6 +146,27 @@
     font-weight: bold;
 }
 .is-active a.sort-name:hover {
-    cursor: default;
     text-decoration: none;
+}
+
+#search .control.has-icons-right .icon {
+    pointer-events: all;
+}
+#search .button.is-text {
+    text-decoration: none;
+}
+#search .button.is-text:hover {
+    background-color: transparent;
+}
+#search .button.is-text {
+    color: inherit;
+}
+
+#clear-search,
+#clear-search i {
+    color: #363636;
+}
+#clear-search:hover,
+#clear-search i:hover {
+    color: gray !important;
 }
