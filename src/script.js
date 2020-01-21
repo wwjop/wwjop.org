@@ -3,6 +3,20 @@ const sorts = ["all", "study", "podcast", "video"]
 let elements
 
 document.addEventListener("DOMContentLoaded", () => {
+    $(".featured-articles-slider").slick({
+        accessibility: false,
+        infinite: true,
+        arrows: false,
+        centerMode: true,
+        variableWidth: true,
+        initialSlide: 0,
+        draggable: false,
+        swipe: false,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 8000
+    })
+
     elements = {
         categories: document.getElementsByClassName("category"),
         psychunits: document.getElementsByClassName("psych-unit"),
@@ -44,6 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
         search(keywords)
     })
     document.querySelector("#search .button.is-text").addEventListener("click", () => resetSearch())
+
+    document.querySelector(".left-arrow i").addEventListener("click", () => $(".featured-articles-slider").slick("slickPrev"))
+    document.querySelector(".right-arrow i").addEventListener("click", () => $(".featured-articles-slider").slick("slickNext"))
 })
 
 function updateResultsNumber() {
