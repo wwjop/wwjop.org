@@ -20,96 +20,29 @@ title: "Home"
             </div>
         </div>
         <div class="featured-articles-slider">
+            {% for post in site.categories.study %}
             <div>
                 <div class="featured-article">
                     <div class="photo-title">
                         <div class="columns is-gapless">
                             <div class="column is-narrow">
-                                <img src="assets/images/people/wesley-smith.jpg">
+                                <img src="/assets/posts/{{ post.title | downcase | replace: ' ', '-' }}/authors">
                             </div>
                             <div class="column">
                                 <div class="title-by-box">
-                                    <p class="title is-2">The Effects of Walnuts on the Brain is Too Much 1</p>
-                                    <p class="subtitle">By Wesley Smith</p>
+                                    <p class="title is-4">{{ post.title }}</p>
+                                    <p class="subtitle">By {{ post.authors | join: ", " }}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p class="excerpt is-size-5">This is the abstract excerpt of my article. Don't you love it? Don't
-                        you
-                        love
-                        it? Don't you love it? Don't you
-                        love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you
-                        love
-                        it?
-                        Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it?
-                        Don't
-                        you
-                        love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love
-                        it?
-                        Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
+                    <p class="excerpt is-size-5">
+                        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 75 | replace: 'Abstract', '' }}
+                        <span><a href="{{ post.url }}">Read More</a></span>
+                    </p>
                 </div>
             </div>
-            <div>
-                <div class="featured-article">
-                    <div class="photo-title">
-                        <div class="columns is-gapless">
-                            <div class="column is-narrow">
-                                <img src="assets/images/people/wesley-smith.jpg">
-                            </div>
-                            <div class="column">
-                                <div class="title-by-box">
-                                    <p class="title is-2">The Effects of Walnuts on the Brain is Too Much 1</p>
-                                    <p class="subtitle">By Wesley Smith</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="excerpt is-size-5">This is the abstract excerpt of my article. Don't you love it? Don't
-                        you
-                        love
-                        it? Don't you love it? Don't you
-                        love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you
-                        love
-                        it?
-                        Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it?
-                        Don't
-                        you
-                        love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love
-                        it?
-                        Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
-                </div>
-            </div>
-            <div>
-                <div class="featured-article">
-                    <div class="photo-title">
-                        <div class="columns is-gapless">
-                            <div class="column is-narrow">
-                                <img src="assets/images/people/wesley-smith.jpg">
-                            </div>
-                            <div class="column">
-                                <div class="title-by-box">
-                                    <p class="title is-2">The Effects of Walnuts on the Brain is Too Much 1</p>
-                                    <p class="subtitle">By Wesley Smith</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="excerpt is-size-5">This is the abstract excerpt of my article. Don't you love it? Don't
-                        you
-                        love
-                        it? Don't you love it? Don't you
-                        love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you
-                        love
-                        it?
-                        Don't you love it? Don't you love it? Don't you love it? Don't you love it? Don't you love it?
-                        Don't
-                        you
-                        love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?Don't you love
-                        it?
-                        Don't you love it?Don't you love it? Don't you love it?Don't you love it? Don't you love it?</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="chevron-down is-hidden-mobile">

@@ -53,6 +53,10 @@
     margin-bottom: 1em;
 }
 
+.featured-article .title {
+    font-size: 1.8em;
+}
+
 .arrow-area .featured-article {
     background-color: transparent;
     pointer-events: none;
