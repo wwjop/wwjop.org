@@ -19,7 +19,7 @@ title: "Home"
                 <i class="fas fa-chevron-right"></i>
             </div>
         </div>
-        <div class="featured-articles-slider">
+        <div class="featured-articles-slider is-invisible">
             {% for post in site.categories.study %}
             <div>
                 <div class="featured-article">
@@ -86,7 +86,7 @@ title: "Home"
         <div class="level-right">
             <div class="level-item">
                 <p class="subtitle is-5">
-                    <strong id="results-number">123</strong>
+                    <strong id="results-number">{{ site.posts.length }}</strong>
                     results
                 </p>
             </div>

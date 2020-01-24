@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         autoplay: true,
         autoplaySpeed: 8000
     })
+    document.getElementsByClassName("featured-articles-slider")[0].classList.remove("is-invisible")
 
     elements = {
         categories: document.getElementsByClassName("category"),
