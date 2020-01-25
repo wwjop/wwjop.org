@@ -42,6 +42,11 @@ i {
     align-items: center;
     flex-direction: column;
 }
+@media screen and (max-width: 1087px) {
+    #nav-area {
+        align-items: unset;
+    }
+}
 
 .logo-and-text {
     display: flex;
@@ -59,10 +64,11 @@ i {
     line-height: 1;
 }
 
-.navbar {
-    background-color: transparent;
-    padding-top: 1vh;
-    padding-bottom: 3vh;
+.navbar-start,
+.navbar-end,
+.navbar-menu,
+.navbar { 
+    background-color: #19191b;
 }
 
 .navbar a {
@@ -74,10 +80,15 @@ i {
     color: #fff;
 }
 
-.navbar,
-.navbar-end,
-.navbar-menu,
-.navbar-start {
+#desktop-navbar {
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+#desktop-navbar,
+#desktop-navbar .navbar-end,
+#desktop-navbar .navbar-menu,
+#desktop-navbar .navbar-start {
     display: flex;
     align-items: stretch;
     min-height: 3.25em;
@@ -89,12 +100,11 @@ i {
     font-family: "Source Sans Pro";
 }
 
-/* .hanging-indent {
-    text-indent: -28px;
-    padding-left: 28px;
-} */
-
 .horizontal-center {
     display: flex;
     justify-content: center;
+}
+
+.navbar-burger span {
+    color: white;
 }

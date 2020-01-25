@@ -4,7 +4,6 @@
     padding-bottom: 0.5em;
 }
 
-.post-area p,
 .title-area {
     padding-bottom: 1em;
 }
@@ -12,4 +11,13 @@
 .post-area h1 {
     font-weight: bold;
     font-size: 1.1em;
+}
+
+.post-area p {
+    text-indent: 50px;
+}
+
+.post-area .has-hanging-indent {
+    padding-left: 50px;
+    text-indent: -50px;
 }
