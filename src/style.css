@@ -172,6 +172,20 @@
     color: gray !important;
 }
 
+@media screen and (max-width: 1087px) {
+    .level.is-mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .level-left,
+    .level-right {
+        flex-grow: unset;
+        flex-shrink: unset;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .fade-left {
     left: 0;
     width: 35%;
