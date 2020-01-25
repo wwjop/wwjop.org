@@ -17,6 +17,7 @@ figure img {
 .people {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .bold {
