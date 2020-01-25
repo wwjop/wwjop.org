@@ -14,12 +14,6 @@
     padding-bottom: 1.5rem;
 }
 
-.crossbar {
-    height: 1px;
-    background-color: black;
-    width: 100%;
-}
-
 i {
     margin: 5px;
 }
@@ -34,67 +28,6 @@ i {
     margin-bottom: 0 !important;
 }
 
-#nav-area {
-    background-color: #19191b;
-    overflow: hidden;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-}
-@media screen and (max-width: 1087px) {
-    #nav-area {
-        align-items: unset;
-    }
-}
-
-.logo-and-text {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding-top: 10px;
-}
-.logo-and-text img {
-    width: 100px;
-}
-.logo-and-text p {
-    color: #fff;
-    font-size: 1.5em;
-    line-height: 1;
-}
-
-.navbar-start,
-.navbar-end,
-.navbar-menu,
-.navbar { 
-    background-color: #19191b;
-}
-
-.navbar a {
-    font-size: 1.2em;
-    padding: 0.5rem 2rem;
-    color: rgba(255,255,255,.6);
-}
-.navbar a:hover {
-    color: #fff;
-}
-
-#desktop-navbar {
-    padding-top: 1vh;
-    padding-bottom: 3vh;
-}
-
-#desktop-navbar,
-#desktop-navbar .navbar-end,
-#desktop-navbar .navbar-menu,
-#desktop-navbar .navbar-start {
-    display: flex;
-    align-items: stretch;
-    min-height: 3.25em;
-    background-color: transparent;
-}
-
 .page {
     padding: 5% 10%;
     font-family: "Source Sans Pro";
@@ -103,8 +36,4 @@ i {
 .horizontal-center {
     display: flex;
     justify-content: center;
-}
-
-.navbar-burger span {
-    color: white;
 }
