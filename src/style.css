@@ -76,9 +76,12 @@
     margin: 1em 0;
 }
 
-.featured-article, 
-.title-by-box {
+.featured-article {
     padding: 20px;
+}
+
+.title-by-box {
+    padding-left: 20px;
 }
 
 .focused {
