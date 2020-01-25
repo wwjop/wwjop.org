@@ -172,7 +172,7 @@
     color: gray !important;
 }
 
-@media screen and (max-width: 1087px) {
+@media screen and (max-width: 768px) {
     .level.is-mobile {
         flex-wrap: wrap;
         justify-content: center;
