@@ -1,5 +1,5 @@
 thead tr > th {
-    width: 50%;
+    width: 33.333333333%;
 }
 
 .button {
@@ -13,4 +13,8 @@ ul {
 #date {
     text-align: center;
     font-weight: bold;
+}
+
+.not-too-wide {
+    width: 65em;
 }
