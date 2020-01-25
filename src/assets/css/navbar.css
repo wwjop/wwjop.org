@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
 }
-@media screen and (max-width: 1087px) {
+@media screen and (max-width: 768px) {
     #nav-area {
         align-items: unset;
     }
