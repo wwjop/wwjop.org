@@ -1,7 +1,7 @@
 {% assign titleWords = post.title | downcase | split: " " %}
 {% assign lowercaseAuthors = post.authors | join: " " | downcase | split: " " %}
 {% assign keywords = titleWords | concat: lowercaseAuthors | concat: post.tags %}
-{% assign search = keywords | join: "|" | append: post.category %}
+{% assign search = keywords | join: "|" | append: "|" | append: post.category %}
 {% assign firstBar = "|" | append: search %}
 {% assign lastBar = firstBar | append: "|" %}
 
