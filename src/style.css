@@ -36,6 +36,7 @@
 .fade-left,
 .fade-right {
     height: var(--card-height);
+    z-index: 1001;
 }
 
 .arrow-area,
@@ -188,50 +189,50 @@
 
 .fade-left {
     left: 0;
-    width: 35%;
+    width: 25%;
     background: -webkit-linear-gradient(to left,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     ); 
     background-image: -moz-linear-gradient(to left,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: -o-linear-gradient(to left,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: linear-gradient(to left,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: -ms-linear-gradient(to left,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
 }
 .fade-right {
     right: 0;
-    width: 35%;
-    margin-left: 65%;
+    width: 25%;
+    margin-left: 75%;
     background: -webkit-linear-gradient(to right,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     ); 
     background-image: -moz-linear-gradient(to right,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: -o-linear-gradient(to right,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: linear-gradient(to right,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
     background-image: -ms-linear-gradient(to right,
         rgba(255, 255, 255, 0) 0%,
-        #19191b 200%
+        #19191b 500%
     );
 }
