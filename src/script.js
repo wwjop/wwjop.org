@@ -1,4 +1,4 @@
-const sorts = ["all", "study", "podcast", "video"]
+const sorts = ["all", "study", "podcast", /*"video"*/]
 
 let elements
 
