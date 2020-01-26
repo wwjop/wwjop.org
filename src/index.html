@@ -20,7 +20,7 @@ title: "Home"
             </div>
         </div>
         <div class="featured-articles-slider is-invisible">
-            {% for post in site.categories.study %}
+            {% for post in site.categories.study limit: 10 %}
             <div>
                 <div class="featured-article">
                     <div class="photo-title">
