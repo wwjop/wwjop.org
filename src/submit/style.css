@@ -1,5 +1,6 @@
 thead tr > th {
-    width: 33.333333333%;
+    /* width: 33.333333333%; */
+    width: 50%;
 }
 
 .button {
