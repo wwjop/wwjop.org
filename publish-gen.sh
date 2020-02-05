@@ -28,7 +28,7 @@ for ((i = 1; i <= $authors_count; i++)); do
 done
 
 echo
-echo "Choose categories:"
+echo "Choose psych units:"
 selected_categories=()
 for (( i=0; i<${#AVAILABLE_PSYCH_UNITS[@]}; i++ )); do
     read -p "${AVAILABLE_PSYCH_UNITS[$i]} (Y/N): " response 
@@ -49,7 +49,7 @@ echo "Post date (Year-Month-Day; ex: 2020-01-25): $post_date"
 
 if (( ${#author_names[@]} > 0 )); then
     authors="${author_names[0]}"
-    for ((i = 1; i <= ${#author_names[@]}; i++)); do
+    for ((i = 1; i <= ${#author_names[@]} - 1; i++)); do
         authors="$authors, ${author_names[$i]}"
     done
     echo "$authors_count authors: $authors"
@@ -59,12 +59,12 @@ fi
 
 if (( ${#selected_categories[@]} > 0 )); then
     categories="${selected_categories[0]}"
-    for ((i = 1; i <= ${#selected_categories[@]}; i++)); do
+    for ((i = 1; i <= ${#selected_categories[@]} - 1; i++)); do
         categories="$categories, ${selected_categories[$i]}"
     done
-    echo "${#selected_categories[@]} categories: $categories"
+    echo "${#selected_categories[@]} psych units: $categories"
 else 
-    echo "0 categories"
+    echo "0 psych units"
 fi
 
 echo
@@ -81,24 +81,32 @@ esac
 echo
 echo "Generating files..."
 
-_post_file_name_article_name="${article_name//\ /\-}"
-_posts_file_name="$post_date-${_post_file_name_article_name,,}.html"
-_post_file="src/_posts/$_posts_file_name"
+_posts_file_name_article_name="$(tr [A-Z] [a-z] <<< "${article_name//\ /-}")"
+_posts_file_name="$post_date-$_posts_file_name_article_name.html"
+_posts_file="src/_posts/$_posts_file_name"
 echo
-echo "Post file location: $_post_file"
-touch "$_post_file"
+echo "Post file location: $_posts_file"
+touch "$_posts_file"
 
-echo "---" >> $post_file
-echo "title: '$article_name'" >> $post_file
+echo "---" >> "$_posts_file"
+echo "title: '$article_name'" >> "$_posts_file"
 if (( ${#author_names[@]} > 0 )); then
-    authors="[ '${author_names[0]}''"
-    for ((i = 1; i <= ${#author_names[@]}; i++)); do
-        authors="$authors, '${author_names[$i]}''"
+    authors="[ '${author_names[0]}'"
+    for ((i = 1; i <= ${#author_names[@]} - 1; i++)); do
+        authors="$authors, '${author_names[$i]}'"
     done
-    authors="$authors]"
-    echo "authors: $authors"
+    authors="$authors ]"
+    echo "authors: $authors" >> "$_posts_file"
 fi
-echo "school: $school_name" >> $post_file
-echo "category: 'study'" >> $post_file
-echo "tags: "
-echo "---" >> $post_file
+echo "school: '$school_name'" >> "$_posts_file"
+echo "category: 'study'" >> "$_posts_file"
+if (( ${#selected_categories[@]} > 0 )); then
+    categories="[ '${selected_categories[0]}'"
+    for ((i = 1; i <= ${#selected_categories[@]} - 1; i++)); do
+        categories="$categories, '${selected_categories[$i]}'"
+    done
+    categories="$categories ]"
+    echo "tags: $categories" >> "$_posts_file"
+fi
+echo "---" >> "$_posts_file"
+echo >> "$_posts_file"
