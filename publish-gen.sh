@@ -31,7 +31,7 @@ echo
 echo "Choose psych units:"
 selected_categories=()
 for (( i=0; i<${#AVAILABLE_PSYCH_UNITS[@]}; i++ )); do
-    read -p "${AVAILABLE_PSYCH_UNITS[$i]} (Y/N): " response 
+    read -p "${AVAILABLE_PSYCH_UNITS[$i]} [Y/N]: " response 
     case "$response" in
         [yY][eE][sS]|[yY]) 
             selected_categories+=( "${AVAILABLE_PSYCH_UNITS[$i]}" )
