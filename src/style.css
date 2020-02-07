@@ -81,10 +81,6 @@
     padding: 20px;
 }
 
-.title-by-box {
-    padding-left: 20px;
-}
-
 .focused {
     margin: 0;
 }
@@ -94,7 +90,12 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-} 
+    padding-left: 20px;
+}
+
+.title-by-box .title a {
+    color: #363636;
+}
 
 .featured-article img {
     height: 200px;
