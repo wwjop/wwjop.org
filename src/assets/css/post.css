@@ -21,3 +21,12 @@
     padding-left: 50px;
     text-indent: -50px;
 }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1em;
+}
