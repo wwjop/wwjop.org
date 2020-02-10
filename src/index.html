@@ -37,7 +37,7 @@ title: "Home"
                         </div>
                     </div>
                     <p class="excerpt is-size-5">
-                        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 75 | replace: 'Abstract', '' }}
+                        {{ post.excerpt | strip_html | strip_newlines | truncatewords: 100 | replace: 'Abstract', '' }}
                         <span><a href="{{ post.url }}">Read More</a></span>
                     </p>
                 </div>
