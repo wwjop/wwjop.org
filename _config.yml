@@ -1,6 +1,12 @@
 title: The Walt Whitman Journal of Psychology
 url: wwjop.org
+description: >- 
+  The Walt Whitman Journal of Psychology is the only High School Psychology journal
+  in the United States. Made by students, for students, the Journal enables access
+  of student research to teachers and students worldwide.
+
 excerpt_separator: <!-- end excerpt -->
+
 source: src
 exclude:
   - README.md
