@@ -1,7 +1,2 @@
-# whitmanpsychjournal.org
-The website for The Whitman Journal of Psychology
-
-# Starting
-* Clone
-* Run `bundle exec jekyll serve`
-* Go to `localhost:3000` in your browser
+# wwjop.org
+Please read the internal guide for editing the website to get started.
