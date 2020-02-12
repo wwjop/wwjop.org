@@ -7,7 +7,7 @@ description: >-
 
 excerpt_separator: <!-- end excerpt -->
 
-source: src
+# source: src
 exclude:
   - README.md
   - .gitignore
