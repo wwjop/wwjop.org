@@ -83,12 +83,12 @@ echo "Generating files..."
 
 _posts_file_name_article_name="$(tr [A-Z] [a-z] <<< "${article_name//\ /-}")"
 _posts_file_name="$post_date-$_posts_file_name_article_name.html"
-_posts_file="src/_posts/$_posts_file_name"
+_posts_file="_posts/$_posts_file_name"
 echo
 echo "Post file location: $_posts_file"
-echo "Assets folder location: src/assets/posts/$_posts_file_name_article_name"
+echo "Assets folder location: assets/posts/$_posts_file_name_article_name"
 touch "$_posts_file"
-mkdir "src/assets/posts/$_posts_file_name_article_name"
+mkdir "assets/posts/$_posts_file_name_article_name"
 
 echo "---" >> "$_posts_file"
 echo "title: '$article_name'" >> "$_posts_file"
