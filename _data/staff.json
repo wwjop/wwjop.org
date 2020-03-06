@@ -16,22 +16,32 @@
             ]
         },
         {
-            "name": "Communications",
+            "name": "Business",
             "people": [
                 {
                     "name": "Jordan Shaibani",
-                    "role": "Team Lead ",
+                    "role": "Team Lead",
                     "year": "Senior"
                 },
                 {
                     "name": "Tori Sullivan",
-                    "role": "Communicator",
+                    "role": "Liaison",
                     "year": "Senior"
                 },
                 {
-                    "name": "Drew Haas",
-                    "role": "Communicator",
-                    "year": "Senior"
+                    "name": "Claire Sorkin",
+                    "role": "Liaison",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Riley Sullivan",
+                    "role": "Liaison",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Jamie Gordon",
+                    "role": "Liaison",
+                    "year": "Junior"
                 }
             ]
         },
@@ -42,6 +52,11 @@
                     "name": "Wesley Smith",
                     "role": "Technical Director",
                     "year": "Senior"
+                },
+                {
+                    "name": "Téa Costello",
+                    "role": "Technical Assistant",
+                    "year": "Junior"
                 }
             ]
         },
@@ -62,6 +77,21 @@
                     "name": "Qiuyu Apel",
                     "role": "Editor",
                     "year": "Senior"
+                },
+                {
+                    "name": "Emily London",
+                    "role": "Editor",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Gabe Schaner",
+                    "role": "Editor",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Matt Mande",
+                    "role": "Editor",
+                    "year": "Junior"
                 }
             ]
         },
@@ -77,6 +107,41 @@
                     "name": "Louis Moon",
                     "role": "Researcher",
                     "year": "Senior"
+                },
+                {
+                    "name": "Isabela MacDonald",
+                    "role": "Researcher",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Alicia Lamkin",
+                    "role": "Researcher",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Gwen Arbetman",
+                    "role": "Researcher",
+                    "year": "Senior"
+                },
+                {
+                    "name": "Lincoln Polan",
+                    "role": "Researcher",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Althea Dulany",
+                    "role": "Researcher",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Nancy Davis",
+                    "role": "Researcher",
+                    "year": "Junior"
+                },
+                {
+                    "name": "Sam Nickerson",
+                    "role": "Researcher",
+                    "year": "Junior"
                 }
             ]
         }
