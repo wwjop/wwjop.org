@@ -4,10 +4,10 @@ layout: short-navbar
 <link rel="stylesheet" href="/assets/css/post.css" />
 
 <div class="is-clearfix">
-	<img src="/assets/posts/{{ page.title | downcase | replace: ' ', '-' }}/main-image" class="is-pulled-left is-hidden-touch"
-        id="article-main-image">
+	<img src="/assets/posts/{{ page.title | downcase | replace: ' ', '-' }}/main-image"
+		class="is-pulled-left is-hidden-touch" id="article-main-image">
 	<div class="title-area">
-		<p class="title is-1 is-marginless is-1">{{ page.title }}</p>
+		<p class="title is-1 is-marginless is-1 is-size-2">{{ page.title }}</p>
 		<p class="subtitle is-marginless is-4">Written at {{ page.school}}</p>
 		<p class="subtitle is-marginless is-4">By {{ page.authors | join: ", " }}</p>
 		{% if page.advisors != nil %}

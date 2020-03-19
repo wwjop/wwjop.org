@@ -1,11 +1,6 @@
 #article-main-image {
     max-width: 15em;
     padding-right: 1em;
-    padding-bottom: 0.5em;
-}
-
-.title-area {
-    padding-bottom: 1em;
 }
 
 .post-area {
@@ -14,7 +9,7 @@
 
 .post-area h1 {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1em;
 }
 
 .post-area p {
