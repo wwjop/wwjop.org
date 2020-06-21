@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ page.title }} | {{ site.title }}</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro" />
-        <link rel="stylesheet" href="//afeld.github.io/emoji-css/emoji.css" />
-        <link rel="stylesheet" href="/assets/css/global.css" />
-        <link rel="stylesheet" href="/assets/css/navbar.css" />
+	<title>{{ page.title }} | {{ site.title }}</title>
 
-        <script src="https://kit.fontawesome.com/d745606e34.js" crossorigin="anonymous"></script>
-        <script src="/assets/scripts/navbar.js"></script>
-    </head>
-    <body>
-        {{ content }}
-    </body>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>Made with <i class="em em-heart"></i> by <a href="/team">our team</a>.</p>
-        </div>
-    </footer>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro" />
+	<link rel="stylesheet" href="//afeld.github.io/emoji-css/emoji.css" />
+	<link rel="stylesheet" href="/assets/css/global.css" />
+	<link rel="stylesheet" href="/assets/css/navbar.css" />
+
+	<script src="https://kit.fontawesome.com/d745606e34.js" crossorigin="anonymous"></script>
+	<script src="/assets/scripts/navbar.js"></script>
+</head>
+
+<body>
+	{{ content }}
+</body>
+<footer class="footer">
+	<div class=" column is-one-third">
+		<img src="/assets/images/logo.png" style="filter: brightness(0) invert(1);">
+		<p>Made with <i class="em em-heart"></i> by <a href="/team">our team</a>.</p>
+	</div>
+</footer>
+
 </html>
